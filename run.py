@@ -14,9 +14,10 @@ def runGame():
         print('Please select either "Rock", "Paper" or "Scissors"')
         print('To quit the game, type "quit"')
         player = input("Choose Wisely!: ")
+        player = player.capitalize()
         player_option.append(player)
 
-        if player == "quit":
+        if player == "Quit":
             break
 
         if validate_option(player_option) == True:
