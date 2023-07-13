@@ -1,32 +1,23 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Rock Paper Scissors
+For this project I decided to create a Rock, Paper, Scissors game within python. It runs within a provided, interactive console. I feel it represents the versitility of python and just how useful it can be. A live version of the site can be found [here](https://sean-rock-paper-scissors-305074a0ba45.herokuapp.com/)
 
-Welcome,
+### How it works
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **March 14, 2023**
+It asks the user to pick Rock, Paper or Scissors. Once the user has made their move, a computer generated user will randomly choose one of the three possible answers. The user will then be informed if they have won, lost or if the game is a draw. The game will repeat until the user types "quit". The programme also has built in error checking to ensure that the user inputs valid data
 
-## Reminders
+![game image](images/p3rps.PNG)
 
-- Your code must be placed in the `run.py` file
-- Your dependencies must be placed in the `requirements.txt` file
-- Do not edit any of the other files or your code may not deploy properly
+### Testing
+The programme was tested in the following ways:
+- Passing it throught a PEP8 linter and passing without any major issues
+- Giving invalid inputs and ensuring the errors are picked up
+- Tested both in a python terminal and on Heroku
 
-## Creating the Heroku app
+### Depoloyment
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
-
-1. `heroku/python`
-2. `heroku/nodejs`
-
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
-
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
-
-Connect your GitHub repository and deploy as normal.
-
-## Constraints
-
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
-
----
-
-Happy coding!
+- Steps for deployment
+    - Create a Heroku app
+    - Setup two _Config Var_ elemnts. One called CREDS with the contents of the creds.json file
+    - The second called PORT and set to 8000
+    - Link the Heroku app to my GitHub repository
+    - Deploy the app [here](https://sean-rock-paper-scissors-305074a0ba45.herokuapp.com/)

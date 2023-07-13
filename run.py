@@ -3,6 +3,7 @@ from random import randint
 options = ["Rock", "Paper", "Scissors"]
 player_option = []
 
+
 def runGame():
 
     cpu = options[randint(0,2)]
@@ -57,13 +58,15 @@ def validate_option(player_option):
             player_option.clear()
             raise ValueError(
             "Invalid answer. Please try again.\n"
-            )
+         )
 
     except ValueError as e:
         print(f"Invalid data: {e}")
         return False
-        
+      
+  
     return True
+
 
 def main():
     runGame()
